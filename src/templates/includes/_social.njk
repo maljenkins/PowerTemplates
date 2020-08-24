@@ -1,0 +1,8 @@
+<!-- Social Share -->
+<div id="social-share">
+  {% for account in social %}
+  <!-- {{ account.name | capitalize }} -->
+  <a pardot-region="{{ account.name | capitalize }}" href="{{ account.link }}"
+    target="blank">{{ account.icon | safe }}</a>
+  {% endfor %}
+</div>

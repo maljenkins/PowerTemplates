@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,MAAM,AAAC,CACL,KAAK,CAAE,eAAe,CACvB",
+    "sources": [
+        "../../src/scss/lp_base_styles_ci.scss"
+    ],
+    "names": [],
+    "file": "lp_base_styles_ci.min.css"
+}

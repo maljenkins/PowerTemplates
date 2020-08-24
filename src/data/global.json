@@ -1,0 +1,108 @@
+{
+  "controls": {
+    "demo_form": false
+  },
+  "general": {
+    "pardot_tracking_domain": "https//go.pardot.com",
+    "lp_base_styles": "https://go.pardot.com/l/33192/2020-07-17/8vwvqm/33192/259974/lp_base_styles_ci.css",
+    "form_styles": "https://go.pardot.com/l/33192/2020-07-17/8vwvqp/33192/259976/form_styles_ci.css",
+    "business_name": "Cheshire Impact",
+    "street_address": "1 Tara Blvd Suite 200",
+    "city_state_zip": "Nashua, NH 03062",
+    "phone": "844-GO-IMPACT",
+    "about": "We're the Digital Marketing Un-Agency. Our goal is to create maximum marketing impact and to do it with measurable results.",
+    "website": "https://cheshireimpact.com",
+    "logo": "https://maljenkins.github.io/cheshPublic/images/cheshlogodark.png",
+    "logo_width": "150",
+    "favicon": "https://www.cheshireimpact.com/wp-content/uploads/2018/07/new-favicon.png",
+    "contact_url": "https://www.cheshireimpact.com/contact/"
+  },
+  "nav": {
+    "fixed": true,
+    "links": true,
+    "link_info": [
+      {
+        "text": "Services",
+        "url": "https://www.cheshireimpact.com/services/"
+      },
+      {
+        "text": "About",
+        "url": "https://www.cheshireimpact.com/about/"
+      },
+      {
+        "text": "Contact",
+        "url": "https://www.cheshireimpact.com/contact/"
+      }
+    ]
+  },
+  "header": {
+    "image": "https://maljenkins.github.io/cheshPublic/images/header_backdrop.jpg"
+  },
+  "social": [
+    {
+      "name": "facebook",
+      "link": "#",
+      "icon": "<i class=\"fab fa-facebook-f\"></i>"
+    },
+    {
+      "name": "twitter",
+      "link": "#",
+      "icon": "<i class=\"fab fa-twitter\"></i>"
+    },
+    {
+      "name": "instagram",
+      "link": "#",
+      "icon": "<i class=\"fab fa-instagram\"></i>"
+    },
+    {
+      "name": "youtube",
+      "link": "#",
+      "icon": "<i class=\"fab fa-youtube\"></i>"
+    },
+    {
+      "name": "pinterest",
+      "link": "#",
+      "icon": "<i class=\"fab fa-pinterest\"></i>"
+    },
+    {
+      "name": "linkedin",
+      "link": "#",
+      "icon": "<i class=\"fab fa-linkedin\"></i>"
+    },
+    {
+      "name": "blog",
+      "link": "#",
+      "icon": "<i class=\"fas fa-globe-americas\"></i>"
+    }
+  ],
+  "scripts": {
+    "inline_form_fields": false,
+    "bootstrap_form_fields": true
+  },
+  "pages": [
+    {
+      "filename": "custom_1.html"
+    },
+    {
+      "filename": "custom_2.html"
+    },
+    {
+      "filename": "download.html"
+    },
+    {
+      "filename": "form_focused.html"
+    },
+    {
+      "filename": "form_only.html"
+    },
+    {
+      "filename": "informational.html"
+    },
+    {
+      "filename": "services.html"
+    },
+    {
+      "filename": "standard.html"
+    }
+  ]
+}
