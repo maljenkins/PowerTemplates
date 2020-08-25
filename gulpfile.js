@@ -116,14 +116,7 @@ const dev = gulp.series(mergeData, nunjucksLP, nunjucksEmail, style, serve, watc
 
 const merge = gulp.series(mergeData);
 
-function testing(done) {
-  console.log(paths.nunjucksEmail.dest);
-  done();
-}
-
-const test = gulp.series(testing);
 
 exports.default = dev;
 exports.merge = merge;
-exports.test = test;
 
