@@ -1,0 +1,21 @@
+{
+    "images": {
+        "lp_header": "https://maljenkins.github.io/cheshPublic/images/header_backdrop.jpg"
+    },
+    "links": {
+        "nav": [
+            {
+                "text": "Services",
+                "url": "https://www.cheshireimpact.com/services/"
+            },
+            {
+                "text": "About",
+                "url": "https://www.cheshireimpact.com/about/"
+            },
+            {
+                "text": "Contact",
+                "url": "https://www.cheshireimpact.com/contact/"
+            }
+        ]
+    }
+}

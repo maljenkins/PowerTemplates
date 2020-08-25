@@ -1,0 +1,26 @@
+{% extends "layout/_layout.html" %}
+
+{% block header %}
+
+    {% include "sections/header/_preheader-text.html" %}
+    {% include "sections/header/_email_header_and_nav.html" %}
+
+{% endblock %}
+
+{% block content %}
+
+    {% include "sections/content/_full_width_image_with_copy-VML.html" %}
+    {% include "sections/content/_webinar_copy.html" %}
+    {% include "sections/content/_divider.html" %}
+    {% include "sections/content/_webinar_speaker_title.html" %}
+    {% include "sections/content/_webinar_speaker.html" %}
+    {% include "sections/content/_divider.html" %}
+    {% include "sections/content/_webinar_series_speakers_title.html" %}
+    {% include "sections/content/_3-column_webinar_series_speakers.html" %}
+
+{% endblock %}
+
+{% block footer %}
+    {% include "sections/footer/_footer.html" %}
+
+{% endblock %}

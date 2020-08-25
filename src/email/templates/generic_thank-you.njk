@@ -1,0 +1,20 @@
+{% extends "layout/_layout.html" %}
+
+{% block header %}
+
+    {% include "sections/header/_preheader-text.html" %}
+    {% include "sections/header/_email_header_and_nav.html" %}
+
+{% endblock %}
+
+{% block content %}
+
+    {% include "sections/content/_headline_thankyou.html" %}
+    {% include "sections/content/_generic_content_thankyou.html" %}
+
+{% endblock %}
+
+{% block footer %}
+    {% include "sections/footer/_footer.html" %}
+
+{% endblock %}

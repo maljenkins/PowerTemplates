@@ -3,6 +3,7 @@ const nunjucksRender = require("gulp-nunjucks-render");
 const sass = require("gulp-sass");
 const prefix = require('gulp-autoprefixer');
 const data = require("gulp-data");
+const mergeJSON = require("gulp-merge-json");
 const plumber = require("gulp-plumber");
 const browserSync = require("browser-sync");
 const server = browserSync.create();
@@ -10,15 +11,31 @@ const fs = require('fs');
 
 
 const paths = {
-  styles: {
-    src: 'src/scss/**/*.scss',
-    dest: 'dist/css/'
-  },
-  html: {
-    src: 'src/templates/**/*'
-  },
   data: {
-    src: 'src/data/*.json'
+    src: 'src/data/inc/*.json',
+    dest: 'src/data/'
+  },
+  styles: {
+    src: 'src/lp/scss/**/*.scss',
+    dest: './dist/lp/css/'
+  },
+  htmlLP: {
+    src: 'src/lp/templates/**/*'
+  },
+  nunjucksLP: {
+    src: './src/lp/templates/*.njk',
+    dest: './dist/lp/'
+  },
+  htmlEmail: {
+    src: 'src/email/templates/**/*'
+  },
+  nunjucksEmail: {
+    src: './src/email/templates/*.njk',
+    dest: './dist/email/'
+  },
+  nunjucksCSS: {
+    src: 'src/lp/wip/**/*.scss',
+    dest: 'src/lp/scss/'
   }
 };
 
@@ -31,9 +48,19 @@ function reload(done) {
 function serve(done) {
   server.init({
     server: {
-      baseDir: './dist/'
+      baseDir: './dist/',
+      directory: true
     }
   });
+  done();
+}
+
+function mergeData(done) {
+  gulp.src('./src/data/inc/*.json')
+    .pipe(mergeJSON({
+      fileName: 'do_not_edit.json'
+    }))
+    .pipe(gulp.dest('./src/data/'));
   done();
 }
 
@@ -41,16 +68,34 @@ function getData(file) {
   return JSON.parse(fs.readFileSync(file));
 }
 
-function nunjucks(done) {
-  gulp.src("./src/templates/*")
+function nunjucksLP(done) {
+  gulp.src(paths.nunjucksLP.src)
     .pipe(plumber())
-    .pipe(data(getData('./src/data/global.json')))
+    .pipe(data(getData('./src/data/do_not_edit.json')))
     .pipe(
       nunjucksRender({
-        path: ["./src/templates/"],
+        path: ['./src/lp/templates/'],
       })
     )
-    .pipe(gulp.dest("./dist/"));
+    .pipe(gulp.dest(paths.nunjucksLP.dest));
+  done();
+}
+
+function nunjucksEmail(done) {
+  gulp.src(paths.nunjucksEmail.src)
+    .pipe(plumber())
+    .pipe(data(getData('./src/data/do_not_edit.json')))
+    .pipe(
+      nunjucksRender({
+        path: ['./src/email/templates/'],
+      })
+    )
+    .pipe(gulp.dest(paths.nunjucksEmail.dest));
+  done();
+}
+
+function nunjucksCSS(done) {
+  // Placeholder
   done();
 }
 
@@ -65,7 +110,20 @@ function style(done) {
 
 
 
-const watch = () => gulp.watch([paths.styles.src, paths.html.src, paths.data.src], gulp.series(nunjucks, style, reload));
+const watch = () => gulp.watch([paths.styles.src, paths.htmlLP.src, paths.htmlEmail.src, paths.data.src], gulp.series(mergeData, nunjucksLP, nunjucksEmail, style, reload));
 
-const dev = gulp.series(nunjucks, style, serve, watch);
+const dev = gulp.series(mergeData, nunjucksLP, nunjucksEmail, style, serve, watch);
+
+const merge = gulp.series(mergeData);
+
+function testing(done) {
+  console.log(paths.nunjucksEmail.dest);
+  done();
+}
+
+const test = gulp.series(testing);
+
 exports.default = dev;
+exports.merge = merge;
+exports.test = test;
+

@@ -1,0 +1,34 @@
+{% extends "layout/_layout.html" %}
+
+{% block header %}
+
+    {% include "sections/header/_preheader-text.html" %}
+    {% include "sections/header/_email_header_and_nav.html" %}
+
+{% endblock %}
+
+{% block content %}
+
+    {% include "sections/content/_full_width_image.html" %}
+    {% include "sections/content/_headline_numbered_list.html" %}
+    {% include "sections/content/_webinar_event_colored.html" %}
+    {% include "sections/content/_3-col_images_RSVP_CTA.html" %}
+    {% include "sections/content/_gallery_title.html" %}
+    {% include "sections/content/_full_width_gallery_cta.html" %}
+    {% include "sections/content/_image_left_article_right.html" %}
+    {% include "sections/content/_divider.html" %}
+    {% include "sections/content/_courses_title.html" %}
+    {% include "sections/content/_course_info.html" %}
+    {% include "sections/content/_divider.html" %}
+    {% include "sections/content/_course_info.html" %}
+    {% include "sections/content/_divider.html" %}
+    {% include "sections/content/_course_info.html" %}
+
+    {% include "sections/content/_full_width_courses_cta.html" %}
+
+{% endblock %}
+
+{% block footer %}
+    {% include "sections/footer/_footer.html" %}
+
+{% endblock %}
