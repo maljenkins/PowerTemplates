@@ -215,23 +215,24 @@ nav.navbar {
     .navbar-collapse.collapsing ul.navbar-nav li.nav-item a.nav-link:focus {
       color: #ff7300; }
 
-header {
+header #hero {
   padding-top: 2rem;
-  padding-bottom: 2rem; }
-  header #hero {
-    color: #ffffff;
-    text-align: center; }
-  header.form-header #hero {
-    text-align: left; }
-  header.form-header #form-outer {
-    background-color: #ffffff;
-    padding: 1rem 2rem;
-    border-radius: 4px;
-    margin-top: 2rem;
-    /* Small devices (landscape phones, 576px and up) */ }
-    @media (min-width: 576px) {
-      header.form-header #form-outer {
-        margin-top: 0; } }
+  padding-bottom: 2rem;
+  color: #ffffff;
+  text-align: center; }
+
+header.form-header #hero {
+  text-align: left; }
+
+header.form-header #form-outer {
+  background-color: #ffffff;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  margin-top: 2rem;
+  /* Small devices (landscape phones, 576px and up) */ }
+  @media (min-width: 576px) {
+    header.form-header #form-outer {
+      margin-top: 0; } }
 
 section#video {
   background-color: #082b4b;

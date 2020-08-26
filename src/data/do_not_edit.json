@@ -20,7 +20,7 @@
 		]
 	},
 	"controls": {
-		"demo_form": false,
+		"demo_form": true,
 		"fixed": true,
 		"nav_links": true,
 		"inline_form_fields": false,
