@@ -17,6 +17,20 @@
                 "text": "Contact",
                 "url": "https://www.cheshireimpact.com/contact/"
             }
+        ],
+        "email_nav": [
+            {
+                "text": "Services",
+                "url": "https://www.cheshireimpact.com/services/"
+            },
+            {
+                "text": "About",
+                "url": "https://www.cheshireimpact.com/about/"
+            },
+            {
+                "text": "Contact",
+                "url": "https://www.cheshireimpact.com/contact/"
+            }
         ]
     }
 }

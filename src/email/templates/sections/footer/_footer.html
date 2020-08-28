@@ -90,7 +90,7 @@
                                         style="font-size:0px;padding:10px 25px;padding-top:0px;padding-bottom:0px;word-break:break-word;">
                                         <div
                                             style="font-family:{{styles.fonts.family | safe }};font-size:10px;font-weight:400;line-height:13px;text-align:center;color:{{styles.colors.white}};">
-                                            <div pardot-region=""><a class="whiteLink" href=" {% if settings.hml == true %}
+                                            <div pardot-region=""><a class="whiteLink" href=" {% if controls.hml == true %}
     {% raw %}
     {{Unsubscribe}}
     {% endraw %}
@@ -99,7 +99,7 @@
     {% endif %}" style="color: {{styles.colors.white}}; text-decoration: none;"><span
                                                         style="color: {{styles.colors.white}}; text-decoration: none;">Unsubscribe</span></a>
                                                 | Copyright &copy; {{general.business_name}}&nbsp;
-                                                {% if settings.hml == true %}
+                                                {% if controls.hml == true %}
                                                 {% raw %}
                                                 {{Current_Year}}
                                                 {% endraw %}

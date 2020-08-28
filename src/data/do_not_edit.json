@@ -17,14 +17,30 @@
 				"text": "Contact",
 				"url": "https://www.cheshireimpact.com/contact/"
 			}
+		],
+		"email_nav": [
+			{
+				"text": "Services",
+				"url": "https://www.cheshireimpact.com/services/"
+			},
+			{
+				"text": "About",
+				"url": "https://www.cheshireimpact.com/about/"
+			},
+			{
+				"text": "Contact",
+				"url": "https://www.cheshireimpact.com/contact/"
+			}
 		]
 	},
 	"controls": {
 		"demo_form": true,
 		"fixed": true,
 		"nav_links": true,
+		"email_nav": 1,
 		"inline_form_fields": false,
-		"bootstrap_form_fields": true
+		"bootstrap_form_fields": true,
+		"hml": true
 	},
 	"general": {
 		"pardot_tracking_domain": "https//go.pardot.com",
