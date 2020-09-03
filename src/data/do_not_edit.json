@@ -34,7 +34,7 @@
 		]
 	},
 	"controls": {
-		"demo_form": true,
+		"demo_form": false,
 		"fixed": true,
 		"nav_links": true,
 		"email_nav": 1,
