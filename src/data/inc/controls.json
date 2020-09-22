@@ -1,6 +1,6 @@
 {
     "controls": {
-        "demo_form": false,
+        "demo_form": true,
         "fixed": true,
         "nav_links": true,
         "email_nav": 1,

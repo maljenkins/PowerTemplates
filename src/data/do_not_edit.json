@@ -34,7 +34,7 @@
 		]
 	},
 	"controls": {
-		"demo_form": false,
+		"demo_form": true,
 		"fixed": true,
 		"nav_links": true,
 		"email_nav": 1,
@@ -108,7 +108,7 @@
 		"colors": {
 			"email_background": "#f6f6f6",
 			"footer_background": "#092b4c",
-			"link": "#092b4c",
+			"link": "#FF7300",
 			"white": "#ffffff",
 			"grey": "#909090",
 			"primary": "#FF7300",

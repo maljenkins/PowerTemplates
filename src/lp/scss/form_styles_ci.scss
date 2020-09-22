@@ -56,8 +56,6 @@ $description-size: inherit;
 $checkbox_radio_inline_label_color: $body;
 $unchecked-bg: $white;
 $unchecked-border: 1px solid $dark-grey;
-$radio-icon: "\f058";
-$checkbox-icon: "\f00c";
 $radio-icon-color: $primary-color;
 $checkbox-icon-color: $white;
 $checkbox-checked-bg: $primary-color;
@@ -221,14 +219,14 @@ $required-asterisk: $error-color;
   p.submit {
     input {
       // The reCaptcha Box is 72px tall. This offsets the submit button so it doesn't overlap
-          //margin-top: 80px;
+      //margin-top: 80px;
     }
   }
   .g-recaptcha > div {
-    /* Google ReCaptcha Styles */
+    // Google ReCaptcha Styles 
     // Float the reCaptcha to the Right with an 8px offset to match input spacing
-      // margin-left: auto;
-      // margin-right: 8px;
+    // margin-left: auto;
+    // margin-right: 8px;
   }
 }
 
@@ -318,20 +316,20 @@ body, html {
 // Checkboxes & Radio Fields
 
 @mixin radio_checkboxes($radio: true) {
-  /* Hide the Regular Input */
+  // Hide the Regular Input
   input {
     opacity: 0;
     position: absolute;
   }
   label {
-    /* Style the Form Field Label */
+    // Style the Form Field Label
     &.field-label {
       display: inline-block;
       vertical-align: middle;
       margin: 5px;
       cursor: pointer;
     }
-    /* Style the Inline Labels (Checkbox/Radio Values) */
+    // Style the Inline Labels (Checkbox/Radio Values)
     &.inline {
       position: relative;
       top: 0px;
@@ -345,7 +343,7 @@ body, html {
     }
   }
 
-  /* Style the Unchecked Checkboxes and Radios */
+  // Style the Unchecked Checkboxes and Radios
   input + label:before {
     content: "";
     background: $unchecked-bg;
@@ -369,28 +367,28 @@ body, html {
       line-height: 18px;
     }
   }
-  /* Style the Checked Checkboxes and Radios */
+  // Style the Checked Checkboxes and Radios
   input:checked + label:before {
     font-size: 16px;
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     @if $radio {
-      content: $radio-icon;
+      content: "\f058";
       color: $radio-icon-color;
     } @else {
-      content: $checkbox-icon;
+      content: "\f00c";
       background: $checkbox-checked-bg;
       color: $checkbox-icon-color;
       border-color: $checkbox-checked-border-color;
     }
   }
-  /* Style the Checkboxes and Radio Field Descriptions */
+  // Style the Checkboxes and Radio Field Descriptions
   .description {
     position: relative;
     top: 5px;
     margin: 0px 0px 0px 20px;
   }
-  /* Move the Checkboxes/Radio Values Under the Field Label */
+  // Move the Checkboxes/Radio Values Under the Field Label
   span.value {
     margin-left: 20px;
     display: block;

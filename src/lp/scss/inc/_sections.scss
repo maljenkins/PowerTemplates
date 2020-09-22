@@ -84,8 +84,8 @@ header {
       padding: 1rem 2rem;
       border-radius: 4px;
       margin-top: 2rem;
-      /* Small devices (landscape phones, 576px and up) */
       @media (min-width: 576px) {
+         /* Small devices (landscape phones, 576px and up) */
         margin-top: 0;
       }
     }
@@ -186,8 +186,8 @@ footer {
     opacity: 0.75;
     transition: opacity 0.15s linear;
     background-color: transparent;
-    /* Small devices (landscape phones, 576px and up) */
     @media (min-width: 576px) {
+      /* Small devices (landscape phones, 576px and up) */
       margin: 6px;
       width: 24px;
       height: 24px;
