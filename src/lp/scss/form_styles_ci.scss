@@ -2,6 +2,11 @@
 @import "inc/functions";
 
 
+
+
+
+$form-icons: true;
+
 // Set Base Colors
 
 $body: color(body);
@@ -404,3 +409,7 @@ body, html {
     }
   }
 }
+
+
+// Include the Form Icons
+// @import "inc/_form-icons";
