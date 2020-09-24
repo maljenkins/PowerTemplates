@@ -38,7 +38,7 @@
 		"fixed": true,
 		"nav_links": true,
 		"email_nav": 1,
-		"inline_form_fields": false,
+		"inline_form_fields": true,
 		"bootstrap_form_fields": true,
 		"hml": true
 	},

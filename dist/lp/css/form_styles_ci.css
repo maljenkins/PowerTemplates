@@ -439,3 +439,87 @@ body, html {
 #pardot-form p.pd-checkbox span.value {
   margin-left: 20px;
   display: block; }
+
+p.pd-text {
+  position: relative; }
+  p.pd-text label.field-label::before {
+    content: "\f039";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #ff7300;
+    display: block;
+    position: absolute;
+    top: 48px;
+    left: 25px; }
+  p.pd-text input {
+    padding-left: 40px !important; }
+
+p.first_name, p.last_name {
+  position: relative; }
+  p.first_name label.field-label::before, p.last_name label.field-label::before {
+    content: "\f007";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #ff7300;
+    display: block;
+    position: absolute;
+    top: 48px;
+    left: 25px; }
+  p.first_name input, p.last_name input {
+    padding-left: 40px !important; }
+
+p.company {
+  position: relative; }
+  p.company label.field-label::before {
+    content: "\f1ad";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #ff7300;
+    display: block;
+    position: absolute;
+    top: 48px;
+    left: 25px; }
+  p.company input {
+    padding-left: 40px !important; }
+
+p.email {
+  position: relative; }
+  p.email label.field-label::before {
+    content: "\f0e0";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #ff7300;
+    display: block;
+    position: absolute;
+    top: 48px;
+    left: 25px; }
+  p.email input {
+    padding-left: 40px !important; }
+
+p.phone {
+  position: relative; }
+  p.phone label.field-label::before {
+    content: "\f095";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #ff7300;
+    display: block;
+    position: absolute;
+    top: 48px;
+    left: 25px; }
+  p.phone input {
+    padding-left: 40px !important; }
+
+p.country, p.city, p.state, p.zip {
+  position: relative; }
+  p.country label.field-label::before, p.city label.field-label::before, p.state label.field-label::before, p.zip label.field-label::before {
+    content: "\f3c5";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #ff7300;
+    display: block;
+    position: absolute;
+    top: 48px;
+    left: 25px; }
+  p.country input, p.city input, p.state input, p.zip input {
+    padding-left: 40px !important; }
