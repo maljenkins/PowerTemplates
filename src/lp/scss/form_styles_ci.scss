@@ -304,6 +304,9 @@ body, html {
 }
 
 #pardot-form {
+  p, div, h1, h2, h3, h4, h5, h6, hr, table, ul, ol {
+    padding-left: 10px;
+  } 
   p {
     // Individual Errors (per field)
     &.error {
