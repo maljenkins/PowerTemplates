@@ -140,7 +140,7 @@ body, html {
       font-weight: 400;
       text-align: left;
       color: #212529;
-      margin: 0px 0px 4px 0px;
+      margin: 0px 0px 4px 1px;
       width: auto; }
     #pardot-form p.form-field.pd-text input {
       background-color: #f8f8f8;
@@ -226,7 +226,7 @@ body, html {
 
 @-moz-document url-prefix() {
   #pardot-form p.form-field.pd-select select {
-    padding-left: calc($input-padding-left - 6px); } }
+    padding-left: 24px; } }
       #pardot-form p.form-field.pd-select select option {
         background-color: inherit;
         color: inherit; }
@@ -275,7 +275,7 @@ body, html {
       font-weight: 400;
       text-align: left;
       color: #212529;
-      margin: 0px 0px 4px 0px;
+      margin: 0px 0px 4px 1px;
       width: auto;
       font-weight: 300;
       margin: 5px 0px 0px 0px;

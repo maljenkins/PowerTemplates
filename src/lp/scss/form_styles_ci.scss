@@ -33,6 +33,8 @@ $input-padding-bottom: 8px;
 $input-padding-left: 18px;
 $input-padding-right: 18px;
 
+$moz-select-padding-left: $input-padding-left + 6px;
+
 // Label Variables
 $label-color: $body;
 $label-size: 14px;
@@ -49,6 +51,7 @@ $submit-color: $white;
 $submit-width: auto;
 
 // Submit Hover Variables
+
 $submit-hover-bg: $secondary-color;
 $submit-hover-color: $white;
 
@@ -114,7 +117,7 @@ $required-asterisk: $error-color;
   font-weight: $label-weight;
   text-align: left;
   color: $label-color;
-  margin: 0px 0px 4px 0px;
+  margin: 0px 0px 4px 1px;
   width: auto;
 }
 
@@ -165,7 +168,7 @@ $required-asterisk: $error-color;
   -moz-appearance: none;
   -ms-user-select: none;
   @-moz-document url-prefix() {
-    padding-left: calc($input-padding-left - 6px);
+    padding-left: $moz-select-padding-left;
   }
   option {
     background-color: inherit;

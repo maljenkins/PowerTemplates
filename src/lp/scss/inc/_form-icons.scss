@@ -1,7 +1,7 @@
 
 $iconOffsetTop: 48px;
 $iconOffsetLeft: 25px;
-$iconPaddingLeft: 40px;
+// To adjust padding of the inputs see line 31 below
 
 $icons: (
     person: "f007",
@@ -28,7 +28,7 @@ $icons: (
       left: $iconOffsetLeft;
     }
     input {
-      padding-left: $iconPaddingLeft !important;
+      padding-left: 40px !important;
     }
   }
 
