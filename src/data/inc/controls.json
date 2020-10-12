@@ -1,7 +1,7 @@
 {
     "controls": {
         "demo_form": true,
-        "fixedPn": true,
+        "fixed_nav": true,
         "nav_links": true,
         "email_nav": 1,
         "inline_form_fields": true,

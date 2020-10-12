@@ -66,7 +66,7 @@
 <!-- Hero -->
 <header>
 	<!-- Navigation -->
-<nav class="navbar navbar-expand-lg ">
+<nav class="navbar navbar-expand-lg fixed-top">
 	<div class="container">
 		<div pardot-region="Logo" class="navbar-brand">
 			<a href="https://cheshireimpact.com" target="_blank"><img class="img-fluid" src="https://maljenkins.github.io/cheshPublic/images/cheshlogodark.png"
@@ -745,23 +745,28 @@
 	
 	<!-- Inline Form Fields -->
 <script>
-  var labels = document.querySelectorAll(
-    "p.pd-text label, p.pd-select label, p.pd-textarea label, p.pd-date label"
-  );
+  var labels = document.querySelectorAll("p.pd-text label, p.pd-select label, p.pd-textarea label, p.pd-date label");
   var i = labels.length;
   while (i--) {
     var label = labels.item(i);
     var text = label.textContent;
-    label.parentNode.classList.contains("required") && (text += " *");
+    label
+      .parentNode
+      .classList
+      .contains("required") && (text += " *");
     var nextElement = label.nextElementSibling;
 
     if (nextElement) {
       if (nextElement.tagName == "SELECT") {
-        nextElement.options[0].text = text;
+        nextElement
+          .options[0]
+          .text = text;
       } else {
         nextElement.setAttribute("placeholder", text);
       }
-      // label.parentNode.removeChild(label);
+      label
+        .parentNode
+        .removeChild(label);
       label.innerText = "";
     }
   }
@@ -782,6 +787,16 @@
   });
 </script>
 	
+	
+	<!-- Dynamic Offset for Fixed Nav -->
+<script>
+  $(document).ready(function () {
+    var nav_height = $("header .navbar").outerHeight();
+    var hero_padding = parseInt($("#hero").css("padding-top"));
+    $("#hero").css("padding-top", nav_height + hero_padding + "px");
+  });
+</script>
+
 	
 	<!-- Add Margin To Submit Button if reCaptcha is Displayed -->
 <script type="text/javascript">

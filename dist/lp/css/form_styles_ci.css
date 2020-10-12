@@ -317,6 +317,9 @@ body, html {
       content: " *";
       color: #dd0000; }
 
+#pardot-form p, #pardot-form div, #pardot-form h1, #pardot-form h2, #pardot-form h3, #pardot-form h4, #pardot-form h5, #pardot-form h6, #pardot-form hr, #pardot-form table, #pardot-form ul, #pardot-form ol {
+  padding-left: 10px; }
+
 #pardot-form p.error {
   color: #dd0000;
   background-color: transparent; }
@@ -449,7 +452,7 @@ p.pd-text {
     color: #ff7300;
     display: block;
     position: absolute;
-    top: 48px;
+    top: 45px;
     left: 25px; }
   p.pd-text input {
     padding-left: 40px !important; }
@@ -463,7 +466,7 @@ p.first_name, p.last_name {
     color: #ff7300;
     display: block;
     position: absolute;
-    top: 48px;
+    top: 45px;
     left: 25px; }
   p.first_name input, p.last_name input {
     padding-left: 40px !important; }
@@ -477,7 +480,7 @@ p.company {
     color: #ff7300;
     display: block;
     position: absolute;
-    top: 48px;
+    top: 45px;
     left: 25px; }
   p.company input {
     padding-left: 40px !important; }
@@ -491,7 +494,7 @@ p.email {
     color: #ff7300;
     display: block;
     position: absolute;
-    top: 48px;
+    top: 45px;
     left: 25px; }
   p.email input {
     padding-left: 40px !important; }
@@ -505,7 +508,7 @@ p.phone {
     color: #ff7300;
     display: block;
     position: absolute;
-    top: 48px;
+    top: 45px;
     left: 25px; }
   p.phone input {
     padding-left: 40px !important; }
@@ -519,7 +522,7 @@ p.country, p.city, p.state, p.zip {
     color: #ff7300;
     display: block;
     position: absolute;
-    top: 48px;
+    top: 45px;
     left: 25px; }
   p.country input, p.city input, p.state input, p.zip input {
     padding-left: 40px !important; }
