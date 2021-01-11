@@ -305,3 +305,34 @@ footer {
         font-size: 24px; } }
     #social-share a:hover {
       opacity: 1; }
+
+body.full-screen main section {
+  min-height: 100vh;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center; }
+
+#pardotModal {
+  background-color: #082b4b; }
+  #pardotModal .modal-dialog {
+    background-color: transparent;
+    border-width: 0px;
+    /* Large devices (desktops, 992px and up) */ }
+    @media (min-width: 992px) {
+      #pardotModal .modal-dialog {
+        max-width: 700px; } }
+  #pardotModal .modal-content {
+    background-color: transparent;
+    border-width: 0px; }
+  #pardotModal .modal-header {
+    color: #fff;
+    border-bottom-width: 0px !important;
+    flex-direction: column; }
+  #pardotModal button.close {
+    color: #fff; }
+  #pardotModal #form-outer {
+    background-color: #ffffff;
+    padding: 1em;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px; }

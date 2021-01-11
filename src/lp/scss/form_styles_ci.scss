@@ -155,7 +155,7 @@ $required-asterisk: $error-color;
   &:focus {
     outline: none;
     border-color: $primary-color;
-    box-shadow: 0 0 5px 2px $primary-color;
+    // box-shadow: 0 0 5px 2px $primary-color;
   }
 }
 
