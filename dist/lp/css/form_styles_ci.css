@@ -177,8 +177,7 @@ body, html {
         opacity: 1; }
       #pardot-form p.form-field.pd-text input:focus {
         outline: none;
-        border-color: #ff7300;
-        box-shadow: 0 0 5px 2px #ff7300; }
+        border-color: #ff7300; }
     #pardot-form p.form-field.pd-select select {
       background-color: #f8f8f8;
       color: #212529;
@@ -221,8 +220,7 @@ body, html {
         opacity: 1; }
       #pardot-form p.form-field.pd-select select:focus {
         outline: none;
-        border-color: #ff7300;
-        box-shadow: 0 0 5px 2px #ff7300; }
+        border-color: #ff7300; }
 
 @-moz-document url-prefix() {
   #pardot-form p.form-field.pd-select select {
@@ -267,8 +265,7 @@ body, html {
         opacity: 1; }
       #pardot-form p.form-field.pd-textarea textarea:focus {
         outline: none;
-        border-color: #ff7300;
-        box-shadow: 0 0 5px 2px #ff7300; }
+        border-color: #ff7300; }
     #pardot-form p.form-field .description {
       font-size: 14px;
       font-size: 0.875rem;
