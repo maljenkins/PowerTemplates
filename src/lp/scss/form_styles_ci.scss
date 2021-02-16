@@ -256,6 +256,11 @@ body, html {
           @include inputStyles;
         }
       }
+      &.pd-date {
+        input {
+          @include inputStyles;
+        }
+      }
       &.pd-select {
         select {
           @include inputStyles;
