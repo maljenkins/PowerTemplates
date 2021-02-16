@@ -237,6 +237,9 @@ $required-asterisk: $error-color;
     // margin-left: auto;
     // margin-right: 8px;
   }
+  .g-recaptcha div {
+    padding-left: 0px;
+  }
 }
 
 body, html {
