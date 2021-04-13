@@ -13,34 +13,11 @@
             "email_icon": "https://www.mailjet.com/images/theme/v1/icons/ico-social/twitter.png"
         },
         {
-            "name": "instagram",
-            "link": "#",
-            "lp_icon": "<i class=\"fab fa-instagram\"></i>",
-            "email_icon": "https://www.mailjet.com/images/theme/v1/icons/ico-social/instagram.png"
-        },
-        {
-            "name": "youtube",
-            "link": "#",
-            "lp_icon": "<i class=\"fab fa-youtube\"></i>",
-            "email_icon": "https://www.mailjet.com/images/theme/v1/icons/ico-social/youtube.png"
-        },
-        {
-            "name": "pinterest",
-            "link": "#",
-            "lp_icon": "<i class=\"fab fa-pinterest\"></i>",
-            "email_icon": "https://www.mailjet.com/images/theme/v1/icons/ico-social/pinterest.png"
-        },
-        {
             "name": "linkedin",
             "link": "#",
             "lp_icon": "<i class=\"fab fa-linkedin\"></i>",
             "email_icon": "https://www.mailjet.com/images/theme/v1/icons/ico-social/linkedin.png"
-        },
-        {
-            "name": "blog",
-            "link": "#",
-            "lp_icon": "<i class=\"fas fa-globe-americas\"></i>",
-            "email_icon": "https://www.mailjet.com/images/theme/v1/icons/ico-social/web.png"
         }
+        
     ]
 }
