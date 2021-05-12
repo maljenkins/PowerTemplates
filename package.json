@@ -19,7 +19,7 @@
     "gulp-postcss": "^9.0.0",
     "gulp-prettier": "^3.0.0",
     "gulp-sass": "^4.1.0",
-    "postcss": "^8.1.1"
+    "postcss": "^8.2.10"
   },
   "dependencies": {
     "gulp": "^4.0.2",
